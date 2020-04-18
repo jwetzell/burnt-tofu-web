@@ -8,6 +8,7 @@ import { WanikaniTokenModule } from 'wanikani-api-ng';
 import { LoginComponent } from './login/login.component'
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     WanikaniApiNgModule,
     WanikaniTokenModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
