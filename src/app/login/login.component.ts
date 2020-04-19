@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       takeUntil(this.destroyed),
       filter(authenticated => authenticated) // only continue if the value is true
     ).subscribe(
-      (_) => { this.router.navigate([''])}
+      (_) => { this.router.navigate(['home'])}
     )
   }
 
