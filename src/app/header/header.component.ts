@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
   }
 
   signOut(){
-    this.tokenService.clearToken()
+    this.tokenService.logout()
     this.router.navigate(['login'])
   }
 }
