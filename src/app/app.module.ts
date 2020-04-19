@@ -5,16 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WanikaniApiNgModule } from 'wanikani-api-ng';
 import { WanikaniTokenModule } from 'wanikani-api-ng';
-import { LoginComponent } from './login/login.component'
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './header/header.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +23,8 @@ import { HeaderModule } from './header/header.module';
     WanikaniApiNgModule,
     WanikaniTokenModule,
     BrowserAnimationsModule,
-    HeaderModule
+    HeaderModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

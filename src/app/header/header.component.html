@@ -1,5 +1,10 @@
 <mat-toolbar>
     <span>Burnt Tofu</span>
     <span class="filler"></span>
-    <button mat-icon-button><mat-icon>settings</mat-icon></button>
+    <button mat-icon-button [matMenuTriggerFor]="settingsMenu"><mat-icon>settings</mat-icon></button>
+    <mat-menu #settingsMenu="matMenu">
+        <!-- <button mat-menu-item (click)="openAccount()" *ngIf="tokenService.hasToken()">Account</button> -->
+        <button mat-menu-item (click)="signOut()" *ngIf="tokenService.hasToken()">Sign Out</button> 
+        <button mat-menu-item (click)="openHelp()">Help</button>   
+    </mat-menu>
 </mat-toolbar>

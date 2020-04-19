@@ -1,1 +1,7 @@
-<p>login works!</p>
+<form [formGroup]="tokenForm" (ngSubmit)="formSubmit()">
+    <mat-form-field>
+        <mat-label>WaniKani API Key</mat-label>
+        <input matInput type="text" formControlName="apiToken">
+    </mat-form-field>
+    <button mat-button type="submit" [disabled]=!tokenForm.valid>Set</button>
+</form>
